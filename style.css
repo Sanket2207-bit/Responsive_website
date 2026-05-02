@@ -226,6 +226,12 @@ div.navigation .imp {
   margin-left: 16px;
   margin-top: 40px;
 }
+.featured_work .fe_wo {
+  width: -moz-max-content;
+  width: max-content;
+  top: 0;
+  position: sticky;
+}
 .featured_work .fe_wo h1 {
   font-family: Lucida Grande;
   font-weight: 300;
@@ -252,26 +258,33 @@ div.navigation .imp {
   font-family: Chillax;
 }
 .featured_work .line6 {
-  border: 0.1px solid black;
-  transform: rotate(90deg);
-  margin-right: 30rem;
+  border: 0.05px solid black;
+  transform: rotate(90deg) translateX(12.5rem);
+  width: 60.5rem;
+  margin-left: -7rem;
 }
 .featured_work .photos {
-  width: 100%;
+  width: 80%;
+  max-width: 800px;
   gap: 20px;
+  margin-top: -17.8rem; /* pulls it up in flow too */
+  margin-left: 25.7rem;
   display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: "a a" "b c" "d e";
 }
 .featured_work .photos img {
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  max-width: 900px;
+  height: 225px;
   border-radius: 15px;
   aspect-ratio: 16/9;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 .featured_work .photos .photo1 {
   grid-area: a;
+  height: 30rem;
+  width: 50rem;
 }
 .featured_work .photos .photo2 {
   grid-area: b;
@@ -284,4 +297,11 @@ div.navigation .imp {
 }
 .featured_work .photos .photo5 {
   grid-area: e;
+}
+
+.line7 {
+  border: 0.1px solid black;
+  margin-top: 3rem;
+  margin-left: 17px;
+  width: 95%;
 }/*# sourceMappingURL=style.css.map */

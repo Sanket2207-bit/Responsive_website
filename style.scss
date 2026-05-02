@@ -224,6 +224,9 @@ div.navigation{
     margin-left: 16px;
     margin-top: 40px;
     .fe_wo{
+        width: max-content;
+        top: 0;
+            position: sticky;
         h1{
             font-family: Lucida Grande;
             font-weight: 300;
@@ -252,27 +255,36 @@ div.navigation{
 
     }
     .line6{
-        border: 0.1px solid black;
-        transform: rotate(90deg);
-        margin-right: 30rem;
+        border: 0.05px solid black;
+        transform: rotate(90deg) translateX(12.5rem);
+        width: 60.5rem;
+        margin-left:-7rem;
+
     }
     .photos{
-        width: 100%;
+        width: 80%;
+        max-width: 800px;
         gap: 20px;
+        margin-top: -17.8rem;   /* pulls it up in flow too */
+        margin-left: 25.7rem;
         display: grid;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "a a"
         "b c"
         "d e";
         img{
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            max-width: 900px;
+            height: 225px;
             border-radius: 15px;
             aspect-ratio: 16/9;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
         .photo1{
             grid-area: a;
+            height: 30rem;
+            width: 50rem;
         }
         .photo2{
             grid-area: b;
@@ -287,4 +299,10 @@ div.navigation{
             grid-area: e;
         }
     }
+}
+.line7{
+    border: 0.1px solid black;
+    margin-top: 3rem;
+    margin-left: 17px;
+    width: 95%;
 }
